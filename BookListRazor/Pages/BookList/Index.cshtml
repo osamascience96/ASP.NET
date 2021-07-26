@@ -1,0 +1,53 @@
+﻿@page
+@model BookListRazor.Pages.BookList.IndexModel
+
+<br />
+
+<div class="container row p-0 m-0">
+    <div class="col-9">
+        <h2 class="text-info">Book List</h2>
+    </div>
+    <div class="col-3">
+        <a class="btn btn-info" asp-page="Create">Create New Book</a>
+    </div>
+
+    <div class="col-12 border p-3 mt-3">
+        <form method="POST">
+            @if(Model.Books.Count() > 0)
+            {
+                <table class="table table-striped border">
+                    <tr class="table-secondary">
+                        <th>
+                            <label asp-for="Books.FirstOrDefault().Name"></label>
+                        </th>
+                        <th>
+                            <label asp-for="Books.FirstOrDefault().Author"></label>
+                        </th>
+                        <th>
+                            <label asp-for="Books.FirstOrDefault().ISBN"></label>
+                        </th>
+                        <th>
+                            <label>Action</label>
+                        </th>
+                    </tr>
+                    @foreach(var item in Model.Books)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(m => item.Name)</td>
+                            <td>@Html.DisplayFor(m => item.Author)</td>
+                            <td>@Html.DisplayFor(m => item.ISBN)</td>
+                            <td>
+                                <button class="btn btn-danger">Delete</button>
+                                <a asp-page="Edit" asp-route-id="@item.Id" class="btn btn-success">Edit</a>
+                            </td>
+                        </tr>
+                    }
+                </table>
+            }
+            else { 
+                <h2 class="text-center">No Books Available</h2>
+            }
+      
+        </form>
+    </div>
+</div>
