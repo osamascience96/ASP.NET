@@ -3,10 +3,10 @@
 ## Create a New Project using a dotnet command
 ***dotnet*** **new _webapp_ -o MyWebApp _--no-https_** 
 - **Please review the details for the parameters**
-- **new**: This Parameter is used to create a new application using the dotnet utility.
-- **webapp**: This paramter specifies the template, when creating the application
-- **-o MyWebApp**: This parameter(-o) creates a directory named __MyWebApp__ where my application data is stored.
-- **--no-https**: This parameter raise the flag to not to enable the ssl or https, as this app is created on a localhost
+	- **new**: This Parameter is used to create a new application using the dotnet utility.
+	- **webapp**: This paramter specifies the template, when creating the application
+	- **-o MyWebApp**: This parameter(-o) creates a directory named __MyWebApp__ where my application data is stored.
+	- **--no-https**: This parameter raise the flag to not to enable the ssl or https, as this app is created on a localhost
 
 ## What Command is used to run the Project?
 1. ***dotnet*** *watch*
