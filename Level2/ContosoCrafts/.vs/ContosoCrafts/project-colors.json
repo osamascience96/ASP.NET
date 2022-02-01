@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "7696aff5-3e7c-40a5-8424-d2b9a16ac168": {
+      "ProjectGuid": "7696aff5-3e7c-40a5-8424-d2b9a16ac168",
+      "DisplayName": "ContosoCrafts.Website",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}
