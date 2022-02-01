@@ -1,7 +1,11 @@
+using ContosoCrafts.Website.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+// Add the JsonFileProductService to the serviceContainer
+builder.Services.AddTransient<JsonFileProductService>();
 
 var app = builder.Build();
 
