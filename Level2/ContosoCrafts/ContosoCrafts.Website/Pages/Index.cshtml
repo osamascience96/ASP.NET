@@ -1,17 +1,27 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Home";
 }
 
 <div class="text-center">
     <h1 class="display-4">Contoso Crafts</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 
-@{
-    foreach(var product in Model.products)
-    {
-        <h2>@product.Title</h2>
-    }
-}
+<div class="card-columns">
+    <div class="row">
+        @{
+            foreach(var product in Model.products)
+            {
+                <div id="product_box" class="col">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-img" style="background-image: url('@product.Image');"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">@product.Title</h5>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>
