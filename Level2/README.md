@@ -24,3 +24,9 @@ It is the options that we configure when in the process of serialization.
 ## PageModel
 It is a class that takes functionality from Microsoft.AspNetCore.Mvc.RazorPages namespace. It also inherits from its classes. But when we see that the model of the view, it inherits from the PageModel, which enables you to work with HttpRequest, such as HttpContext, Request, Response, ViewData and ModelState is defined to us in the pipeline.
  
+## MapRazorPages
+The model we see of each page, when we request the resource, it simply returns the view and that view which is returned by that is mapped to the cshtml using **MapRazorPages** that is configured in the program.cs
+
+## MapGet
+A function that adds the endpoint to the specific request of Get method. It takes the string pattern and a callback that when anyone sends requests, the callback function runs, so we get service from application configured services of the <TValue> type that we get some data. Then we can convert that to JSON by Serializing it and write json response.
+
