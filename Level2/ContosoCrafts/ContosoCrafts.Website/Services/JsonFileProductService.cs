@@ -30,5 +30,34 @@ namespace ContosoCrafts.Website.Services
                     });
             }
         }
+
+        public void AddRating(string productId, int rating)
+        {
+            var products = GetProducts();
+
+            // LINQ
+            var product = products.First(x => x.Id == productId);
+
+            if(product.Ratings == null)
+            {
+                product.Ratings = new int[] {rating};
+            }
+            else
+            {
+                var ratings = product.Ratings.ToList();
+                ratings.Add(rating);
+
+                product.Ratings = ratings.ToArray();
+            }
+
+            using(var outputStream = File.OpenWrite(JsonFileName))
+            {
+                JsonSerializer.Serialize<IEnumerable<Product>>(new Utf8JsonWriter(outputStream, new JsonWriterOptions
+                {
+                    SkipValidation = true,
+                    Indented = true,
+                }), products);
+            }
+        }
     }
 }

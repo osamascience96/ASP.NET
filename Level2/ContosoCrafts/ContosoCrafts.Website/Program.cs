@@ -8,6 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 // Add the JsonFileProductService to the serviceContainer
 builder.Services.AddTransient<JsonFileProductService>();
+// Add the Controller Service to the service Continer
+builder.Services.AddControllers();
 
 var app = builder.Build();
 
@@ -20,16 +22,19 @@ if (!app.Environment.IsDevelopment())
 }
 
 // create an endpoint for all the products to be returned in JSON Format (Create a Mini API)
-app.MapGet("/products", (context) =>
+/*app.MapGet("/products", (context) =>
 {
     var products = app.Services.GetService<JsonFileProductService>().GetProducts();
     var json = JsonSerializer.Serialize<IEnumerable<Product>>(products);
 
     return context.Response.WriteAsync(json);
-});
+});*/
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
+// Add the controller to the mapper,
+app.MapControllers();
 
 app.UseRouting();
 
