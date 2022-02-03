@@ -39,7 +39,7 @@ The **ActionResult** return type is used to return the httpstatus so that the re
 ***Basic Structure of LINQ***
 ![Basic LINQ Image](basic.png)
 
-***+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++***
+***++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++***
 
 ***Detailed Structure of LINQ***
 ![Structure LINQ Image](detailedPic.png)
