@@ -30,3 +30,15 @@ The model we see of each page, when we request the resource, it simply returns t
 ## MapGet
 A function that adds the endpoint to the specific request of Get method. It takes the string pattern and a callback that when anyone sends requests, the callback function runs, so we get service from application configured services of the <TValue> type that we get some data. Then we can convert that to JSON by Serializing it and write json response.
 
+## Making APIs in ASP.NET
+> When making controller in the project, we have to configure in the Program.cs. We have to add the controller to the service and then after adding the mapper to the controller, just like the razor service is configured and then mapped to the views.
+In this project we have added the *simple controller service* and we also have many other options of the mvc controller configurations and many other controller. When we use the API Controller, then we don't have to convert the response to json, it automatically returns the reponse.
+The **ActionResult** return type is used to return the httpstatus so that the response can be handle accordingly on the client end.
+**LINQ** Language Integrated Query is a Microsoft .NET Framework component that adds native query language capabilities so that we can fetch the data from the source of any kind either SQL Database, Object Collection etc.
+
+***Basic Structure of LINQ***
+![Basic LINQ Image](basic.png)
+
+***Detailed Structure of LINQ***
+![Structure LINQ Image](detailedPic.png)
+
