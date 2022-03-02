@@ -20,4 +20,4 @@
      - I am currently working as a Frontend Developer in this project for a local body.
 
 ## Note
-   I Push my experiement Projects on Github for safe records and to relearn my experiemtns again in the near future.
+   I Push my experiement Projects on Github for safe records and to relearn my experiments again in the near future.
