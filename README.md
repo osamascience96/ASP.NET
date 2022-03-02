@@ -10,4 +10,14 @@
      ![CRM Image](asp.net_project_snippet.PNG)
      https://crmbrain.io/
 
-  2.  
+  2. Fotisto Content Creation Project
+     - I have worked as a Software Engineer in this project under the guiance of the seniors of this project. I was mostly responsible for handling dashboard and other tasks related to annonymous interface of the users. 
+     - The Project creates a good communication with data between the client and the professional where the professional can create the work portfolio and the client can create a project and in it, the user can hire professionals for different events.
+     ![Fotisto Image](fotisto_project_snippet.PNG)
+     https://dev.fotisto.co/#
+  
+  3. Financial Solution
+     - I am currently working as a Frontend Developer in this project for a local body.
+
+## Note
+   I Push my experiement Projects on Github for safe records and to relearn my experiemtns again in the near future.
