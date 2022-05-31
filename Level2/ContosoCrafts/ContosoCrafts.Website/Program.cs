@@ -10,6 +10,8 @@ builder.Services.AddRazorPages();
 builder.Services.AddTransient<JsonFileProductService>();
 // Add the Controller Service to the service Continer
 builder.Services.AddControllers();
+// Add the blazor service to the service container
+builder.Services.AddServerSideBlazor();
 
 var app = builder.Build();
 
@@ -41,5 +43,7 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapRazorPages();
+
+app.MapBlazorHub();
 
 app.Run();
