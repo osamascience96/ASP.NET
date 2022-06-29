@@ -36,5 +36,9 @@
         
         <TextBox Grid.Column="2" Grid.Row="2" x:Name="firstNameText"
                  Width="150" Margin="5 0 0 0"/>
+
+        <Button x:Name="submitButton" Content="Submit" 
+                Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" 
+                Margin="10" />
     </Grid>
 </Window>
