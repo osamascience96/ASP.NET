@@ -24,7 +24,7 @@
         <td>
           <div class="btn-group" role="group">
             <a [routerLink]="['View', employee.id]" type="button" class="btn btn-outline-success">View</a>
-            <button type="button" class="btn btn-outline-primary">Edit</button>
+            <a [routerLink]="['Edit', employee.id]" type="button" class="btn btn-outline-primary">Edit</a>
             <button type="button" class="btn btn-outline-danger">Delete</button>
           </div>
         </td>

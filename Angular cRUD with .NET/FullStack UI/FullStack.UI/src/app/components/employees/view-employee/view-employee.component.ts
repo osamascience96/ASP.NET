@@ -37,6 +37,9 @@ export class ViewEmployeeComponent implements OnInit {
             }
           });
         }
+      },
+      error: (response) => {
+        console.log(response);
       }
     });
   }
