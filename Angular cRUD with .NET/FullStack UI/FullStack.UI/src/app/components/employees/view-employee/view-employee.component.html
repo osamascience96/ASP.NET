@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="card  mt-3">
+    <div class="card-header">
+      {{employee.id}}
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{employee.name}}</h5>
+      <p class="card-text">{{employee.email}}</p>
+      <p class="card-text">
+        <span class="text-primary">Phone Number: </span> {{employee.phone}}
+      </p>
+      <p class="card-text">
+        <span class="text-success">Salary: </span> {{employee.salary}}
+      </p>
+      <p class="card-text">
+        <span class="text-secondary">Department: </span> {{employee.department}}
+      </p>
+      <a href="#" class="btn btn-dark" routerLink="/employees">View All Employees</a>
+    </div>
+  </div>
+</div>

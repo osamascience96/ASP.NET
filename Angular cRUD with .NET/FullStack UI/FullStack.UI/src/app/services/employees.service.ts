@@ -20,4 +20,8 @@ export class EmployeesService {
   addEmployee(employee: Employee): Observable<Employee>{
     return this.http.post<Employee>(this.baseApiUrl + "api/Employees", employee);
   }
+
+  getEmployee(id: string): Observable<Employee>{
+    return this.http.get<Employee>(this.baseApiUrl + "api/Employees/" + id);
+  }
 }

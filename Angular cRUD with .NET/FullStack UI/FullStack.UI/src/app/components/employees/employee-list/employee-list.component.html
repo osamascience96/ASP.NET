@@ -10,6 +10,7 @@
         <th scope="col">Phone</th>
         <th scope="col">Salary</th>
         <th scope="col">Department</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -20,6 +21,13 @@
         <td>{{employee.phone}}</td>
         <td>{{employee.salary}}</td>
         <td>{{employee.department}}</td>
+        <td>
+          <div class="btn-group" role="group">
+            <a [routerLink]="['View', employee.id]" type="button" class="btn btn-outline-success">View</a>
+            <button type="button" class="btn btn-outline-primary">Edit</button>
+            <button type="button" class="btn btn-outline-danger">Delete</button>
+          </div>
+        </td>
       </tr>
     </tbody>
   </table>
