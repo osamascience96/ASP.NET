@@ -25,7 +25,7 @@
           <div class="btn-group" role="group">
             <a [routerLink]="['View', employee.id]" type="button" class="btn btn-outline-success">View</a>
             <a [routerLink]="['Edit', employee.id]" type="button" class="btn btn-outline-primary">Edit</a>
-            <button type="button" class="btn btn-outline-danger">Delete</button>
+            <button (click)="deleteEmployee(employee.id);" type="button" class="btn btn-outline-danger">Delete</button>
           </div>
         </td>
       </tr>
